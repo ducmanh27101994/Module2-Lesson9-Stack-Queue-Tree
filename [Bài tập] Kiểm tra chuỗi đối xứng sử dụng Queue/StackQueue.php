@@ -9,15 +9,14 @@ class Queue {
     function checkArray($arr1){
         $arr = str_split($arr1);
 
-        for ($i = 0; $i < count($arr); $i++) {
+        for ($i = 0; $i < count($arr)/2; $i++) {
             if ($arr[$i] !== $arr[count($arr)-1-$i]){
                 return false;
             }
-            return true;
         }
-
+        return true;
     }
 
 }
 $queue = new Queue();
-var_dump($queue->checkArray("able was I ere I saw elba"));
+var_dump($queue->checkArray("able was I erddde I saw elba"));

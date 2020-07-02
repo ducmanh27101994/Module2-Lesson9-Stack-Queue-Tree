@@ -21,7 +21,7 @@ class Stack
         while ($number > 0) {
             array_push($this->stack,($number % 2));
             $i++;
-            $number = (int)($number / 2);
+            $number = floor($number / 2);
         }
         return $this->stack;
     }
