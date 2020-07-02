@@ -49,7 +49,6 @@ $stack->pop();
 $stack->pop();
 $stack->pop();
 $stack->pop();
-$stack->pop();
 
 
 echo "<pre>";
